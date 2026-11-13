@@ -2,7 +2,7 @@
 
 Thank you for your interest in contributing to PPO-CodeT5! This document provides guidelines and information for contributors.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -33,7 +33,7 @@ Thank you for your interest in contributing to PPO-CodeT5! This document provide
    pip install -e ".[dev]"
    ```
 
-## 📝 How to Contribute
+## How to Contribute
 
 ### Reporting Issues
 - Use the GitHub issue tracker
@@ -79,7 +79,7 @@ Thank you for your interest in contributing to PPO-CodeT5! This document provide
    git push origin feature/your-feature-name
    ```
 
-## 📋 Code Style Guidelines
+## Code Style Guidelines
 
 ### Python Code
 - Follow PEP 8 style guidelines
@@ -98,7 +98,7 @@ Thank you for your interest in contributing to PPO-CodeT5! This document provide
 - Add docstrings to new functions/classes
 - Include examples in documentation
 
-## 🧪 Testing
+## Testing
 
 ### Running Tests
 ```bash
@@ -118,7 +118,7 @@ pytest tests/test_specific.py
 - Mock external dependencies
 - Aim for good test coverage
 
-## 📊 Performance Considerations
+## Performance Considerations
 
 ### Memory Usage
 - Monitor GPU memory usage during training
@@ -130,20 +130,20 @@ pytest tests/test_specific.py
 - Use vectorized operations when possible
 - Consider model quantization for deployment
 
-## 🔒 Security
+## Security
 
 - Never commit API keys or credentials
 - Use environment variables for sensitive data
 - Validate all user inputs
 - Keep dependencies updated
 
-## 📞 Getting Help
+## Getting Help
 
 - Check existing issues and discussions
 - Join our community discussions
 - Contact maintainers for urgent issues
 
-## 🎯 Areas for Contribution
+## Areas for Contribution
 
 ### High Priority
 - Performance optimizations
@@ -163,15 +163,15 @@ pytest tests/test_specific.py
 - Mobile deployment
 - Advanced hyperparameter tuning
 
-## 📄 License
+## License
 
 By contributing to PPO-CodeT5, you agree that your contributions will be licensed under the MIT License.
 
-## 🙏 Recognition
+## Recognition
 
 Contributors will be recognized in:
 - README.md contributors section
 - Release notes
 - Project documentation
 
-Thank you for contributing to PPO-CodeT5! 🎉
+Thank you for contributing to PPO-CodeT5! 

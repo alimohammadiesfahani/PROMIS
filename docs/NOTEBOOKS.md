@@ -2,7 +2,7 @@
 
 This document provides detailed information about the Jupyter notebooks included in this reinforcement learning-driven prompt optimization project.
 
-## 📓 Available Notebooks
+## Available Notebooks
 
 ### 1. `01_ppo_codet5.ipynb` - CodeT5+ Implementation
 
@@ -54,7 +54,7 @@ class Config:
     MAX_STEPS = 10
 ```
 
-## 🔄 Key Differences
+## Key Differences
 
 | Aspect | CodeT5+ (01) | CodeLlama (02) |
 |--------|--------------|----------------|
@@ -65,7 +65,7 @@ class Config:
 | **Memory Usage** | Lower | Higher |
 | **Code Quality** | Good for simple tasks | Better for complex tasks |
 
-## 🚀 Usage Instructions
+## Usage Instructions
 
 ### Running Individual Notebooks
 
@@ -86,7 +86,7 @@ Use the comparison script:
 python examples/compare_models.py
 ```
 
-## 📊 Expected Results
+## Expected Results
 
 ### CodeT5+ Results
 - **Training Time**: ~30-60 minutes (depending on hardware)
@@ -100,7 +100,7 @@ python examples/compare_models.py
 - **Memory Usage**: ~12-16GB GPU memory
 - **Best For**: Complex code generation, production use
 
-## 🔧 Customization
+## Customization
 
 ### Modifying Model Parameters
 
@@ -129,7 +129,7 @@ To add support for new models:
 3. Adjust the code generation pipeline if needed
 4. Update the environment to handle new model outputs
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -168,7 +168,7 @@ To add support for new models:
    config.training.max_episodes = 20
    ```
 
-## 📈 Monitoring and Logging
+## Monitoring and Logging
 
 Both notebooks include comprehensive logging:
 
@@ -177,7 +177,7 @@ Both notebooks include comprehensive logging:
 - **Resource Usage**: GPU memory and training time
 - **Error Tracking**: Failed test cases and error analysis
 
-## 🤝 Contributing
+## Contributing
 
 When contributing to the notebooks:
 
@@ -187,7 +187,7 @@ When contributing to the notebooks:
 4. **Test with different configurations**
 5. **Update documentation**
 
-## 🔬 EPiC Framework Integration
+## EPiC Framework Integration
 
 Both notebooks integrate the **Epic_GA** component, which is based on the [EPiC Framework](https://github.com/HamedTaherkhani/EPiC) by HamedTaherkhani. This framework implements:
 
@@ -210,7 +210,7 @@ If Failed: Epic_GA Mutation → New Prompt → Repeat
 
 This integration allows PROMIS to benefit from EPiC's proven evolutionary prompt engineering capabilities while adding the reinforcement learning layer for more sophisticated optimization.
 
-## 📚 References
+## References
 
 - [CodeT5+ Paper](https://arxiv.org/abs/2207.10397)
 - [CodeLlama Paper](https://arxiv.org/abs/2308.12950)

@@ -1,6 +1,6 @@
 # PPO-CodeT5 Project Structure
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 Alicode/
@@ -43,7 +43,7 @@ Alicode/
 └── install.bat                   # Windows installation script
 ```
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Core Components
 
@@ -84,7 +84,7 @@ Alicode/
 - **Error Handling**: Robust error handling and recovery
 - **Extensibility**: Easy to extend and modify
 
-## 🚀 Usage Patterns
+## Usage Patterns
 
 ### 1. Command Line Interface
 ```bash
@@ -113,7 +113,7 @@ results = trainer.train()
 jupyter notebook 01_ppo_codet5.ipynb
 ```
 
-## 🔧 Development Workflow
+## Development Workflow
 
 1. **Configuration**: Modify `config.py` for new settings
 2. **Models**: Add new models in `models/` directory
@@ -123,7 +123,7 @@ jupyter notebook 01_ppo_codet5.ipynb
 6. **Tests**: Write tests in `tests/` directory
 7. **Examples**: Create examples in `examples/` directory
 
-## 📦 Package Distribution
+## Package Distribution
 
 The package is designed for easy distribution and installation:
 
@@ -133,7 +133,7 @@ The package is designed for easy distribution and installation:
 - **Docker Support**: Ready for containerization
 - **CI/CD Ready**: Automated testing and deployment
 
-## 🎯 Benefits of This Structure
+## Benefits of This Structure
 
 1. **Professional**: Industry-standard Python package structure
 2. **Maintainable**: Clear separation of concerns

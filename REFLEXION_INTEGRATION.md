@@ -1,10 +1,10 @@
 # Reflexion Framework Integration in Reinforcement Learning–Driven Prompt Optimization
 
-## 🔗 Integration Overview
+## Integration Overview
 
 This project integrates concepts from the **Reflexion: Language Agents with Verbal Reinforcement Learning** framework (NeurIPS 2023) by Noah Shinn, Beck Labash, and Ashwin Gopinath. This integration brings powerful verbal reinforcement learning capabilities to our reinforcement learning-driven code generation system.
 
-## 📚 Reflexion Framework Reference
+## Reflexion Framework Reference
 
 **Paper**: "Reflexion: Language Agents with Verbal Reinforcement Learning"  
 **Conference**: NeurIPS 2023  
@@ -12,7 +12,7 @@ This project integrates concepts from the **Reflexion: Language Agents with Verb
 **Repository**: [noahshinn/reflexion](https://github.com/noahshinn/reflexion)  
 **Key Innovation**: Verbal reinforcement learning through linguistic feedback instead of traditional weight updates
 
-## 🧠 Core Reflexion Concepts
+## Core Reflexion Concepts
 
 ### 1. Verbal Feedback Mechanism
 - **Concept**: Agents receive linguistic feedback on task performance
@@ -34,7 +34,7 @@ This project integrates concepts from the **Reflexion: Language Agents with Verb
 - **Implementation**: PPO agent learns from feedback patterns over time
 - **Code Location**: `ppo_codet5/agents/ppo_agent.py`
 
-## 📊 Reflexion Performance Results
+## Reflexion Performance Results
 
 ### Original Reflexion Results
 | **Benchmark** | **Reflexion Result** | **Previous SOTA** | **Improvement** |
@@ -49,7 +49,7 @@ This project integrates concepts from the **Reflexion: Language Agents with Verb
 | **Strategy** | **CodeT5+ Pass@1** | **CodeT5+ SoftPass@1** | **CodeLLaMA Pass@1** | **CodeLLaMA SoftPass@1** |
 |--------------|-------------------|----------------------|---------------------|------------------------|
 | **Reflexion** | 41.63% | 55.10% | 52.70% | 63.60% |
-| **🎯 Our RL Agent (PPO)** | **57.58%** | **67.90%** | **64.80%** | **73.10%** |
+|** Our RL Agent (PPO)** | **57.58%** | **67.90%** | **64.80%** | **73.10%** |
 | **Improvement** | **+15.95%** | **+12.80%** | **+12.10%** | **+9.50%** |
 
 ### Key Insights
@@ -58,7 +58,7 @@ This project integrates concepts from the **Reflexion: Language Agents with Verb
 - **CodeLLaMA**: +12.10% Pass@1 improvement over Reflexion
 - **SoftPass@1**: Consistent improvements showing better partial success handling
 
-## 🔄 Integration in Our Project
+## Integration in Our Project
 
 ### Technical Implementation
 
@@ -109,7 +109,7 @@ for episode in range(max_episodes):
     agent.update_policy()
 ```
 
-## 🔄 Reflexion-Inspired Workflow
+## Reflexion-Inspired Workflow
 
 ```
 Initial Prompt → Code Generation → Test Evaluation → 
@@ -128,7 +128,7 @@ Improved Generation → Enhanced Performance
 7. **Improved Generation**: Generate new code with modified prompt
 8. **Enhanced Performance**: Achieve better results through iterative improvement
 
-## 🎯 Benefits of Reflexion Integration
+## Benefits of Reflexion Integration
 
 ### 1. Enhanced Learning Efficiency
 - **Verbal Feedback**: More interpretable than numerical rewards
@@ -145,7 +145,7 @@ Improved Generation → Enhanced Performance
 - **Faster Convergence**: More efficient learning process
 - **Robust Solutions**: More reliable prompt optimization
 
-## 🔬 Research Applications
+## Research Applications
 
 ### 1. Academic Research
 - **Prompt Engineering**: Advanced techniques for LLM optimization
@@ -157,7 +157,7 @@ Improved Generation → Enhanced Performance
 - **Code Review**: Intelligent feedback systems
 - **Programming Education**: Adaptive learning platforms
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 ### Expected Improvements
 - **Success Rate**: 15-25% improvement over baseline methods
@@ -170,7 +170,7 @@ Improved Generation → Enhanced Performance
 - **HumanEval**: OpenAI's code generation benchmark
 - **Custom Metrics**: Project-specific evaluation criteria
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 ### 1. Advanced Reflection Mechanisms
 - **Multi-turn Reflection**: Multiple rounds of feedback analysis
@@ -187,7 +187,7 @@ Improved Generation → Enhanced Performance
 - **Sentiment Analysis**: Understanding emotional context of feedback
 - **Multi-modal Feedback**: Integration of different feedback types
 
-## 🤝 Contributing
+## Contributing
 
 When contributing to the Reflexion integration:
 
@@ -197,7 +197,7 @@ When contributing to the Reflexion integration:
 4. **Document Changes**: Update integration documentation
 5. **Benchmark Performance**: Measure improvements over baseline
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [Reflexion Paper](https://arxiv.org/abs/2303.11366) - Original research paper
 - [Reflexion GitHub](https://github.com/noahshinn/reflexion) - Official implementation

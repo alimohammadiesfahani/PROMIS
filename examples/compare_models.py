@@ -16,7 +16,7 @@ from ppo_codet5.utils import setup_logging
 
 def run_codet5_experiment():
     """Run CodeT5+ based experiment."""
-    print("🚀 Starting CodeT5+ Experiment")
+    print("Starting CodeT5+ Experiment")
     
     # Create configuration for CodeT5+
     config = Config()
@@ -49,7 +49,7 @@ def run_codet5_experiment():
 
 def run_llama_experiment():
     """Run CodeLlama based experiment."""
-    print("🚀 Starting CodeLlama Experiment")
+    print("Starting CodeLlama Experiment")
     
     # Create configuration for CodeLlama
     config = Config()
@@ -82,7 +82,7 @@ def run_llama_experiment():
 
 def compare_results(codet5_results, llama_results):
     """Compare results from both models."""
-    print("\n📊 Model Comparison Results:")
+    print("\nModel Comparison Results:")
     print("=" * 50)
     
     # Training time comparison
@@ -107,23 +107,23 @@ def compare_results(codet5_results, llama_results):
     
     # Determine winner
     if codet5_avg_reward > llama_avg_reward:
-        print(f"\n🏆 CodeT5+ performs better in terms of average reward")
+        print(f"\nCodeT5+ performs better in terms of average reward")
     elif llama_avg_reward > codet5_avg_reward:
-        print(f"\n🏆 CodeLlama performs better in terms of average reward")
+        print(f"\nCodeLlama performs better in terms of average reward")
     else:
-        print(f"\n🤝 Both models perform equally well")
+        print(f"\nBoth models perform equally well")
     
     if codet5_success_rate > llama_success_rate:
-        print(f"🏆 CodeT5+ has higher success rate")
+        print(f"CodeT5+ has higher success rate")
     elif llama_success_rate > codet5_success_rate:
-        print(f"🏆 CodeLlama has higher success rate")
+        print(f"CodeLlama has higher success rate")
     else:
-        print(f"🤝 Both models have equal success rates")
+        print(f"Both models have equal success rates")
 
 
 def main():
     """Main comparison function."""
-    print("🔬 Reinforcement Learning–Driven Prompt Optimization Model Comparison Experiment")
+    print("Reinforcement Learning–Driven Prompt Optimization Model Comparison Experiment")
     print("Comparing CodeT5+ vs CodeLlama implementations")
     print("=" * 60)
     
@@ -147,8 +147,8 @@ def main():
     with open(results_path, 'w') as f:
         json.dump(comparison_data, f, indent=2)
     
-    print(f"\n💾 Comparison results saved to {results_path}")
-    print("\n✅ Model comparison completed successfully!")
+    print(f"\nComparison results saved to {results_path}")
+    print("\nModel comparison completed successfully!")
 
 
 if __name__ == "__main__":

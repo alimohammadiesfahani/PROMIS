@@ -1,0 +1,463 @@
+warning: in the working copy of 'CONTRIBUTING.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'DATASET_AND_HARDWARE_UPDATE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'EPIC_INTEGRATION.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'PROJECT_NAME_UPDATE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'PROJECT_STRUCTURE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'PROMIS_SUMMARY.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'REFLEXION_INTEGRATION.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/NOTEBOOKS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'examples/basic_training.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'examples/compare_models.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'examples/custom_config.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'examples/evaluation_example.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'install.bat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'install.sh', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/CONTRIBUTING.md b/CONTRIBUTING.md[m
+[1mindex 1f501d6..d5feaa5 100644[m
+[1m--- a/CONTRIBUTING.md[m
+[1m+++ b/CONTRIBUTING.md[m
+[36m@@ -2,7 +2,7 @@[m
+ [m
+ Thank you for your interest in contributing to PPO-CodeT5! This document provides guidelines and information for contributors.[m
+ [m
+[31m-## 🚀 Getting Started[m
+[32m+[m[32m## Getting Started[m
+ [m
+ ### Prerequisites[m
+ - Python 3.8 or higher[m
+[36m@@ -33,7 +33,7 @@[m [mThank you for your interest in contributing to PPO-CodeT5! This document provide[m
+    pip install -e ".[dev]"[m
+    ```[m
+ [m
+[31m-## 📝 How to Contribute[m
+[32m+[m[32m## How to Contribute[m
+ [m
+ ### Reporting Issues[m
+ - Use the GitHub issue tracker[m
+[36m@@ -79,7 +79,7 @@[m [mThank you for your interest in contributing to PPO-CodeT5! This document provide[m
+    git push origin feature/your-feature-name[m
+    ```[m
+ [m
+[31m-## 📋 Code Style Guidelines[m
+[32m+[m[32m## Code Style Guidelines[m
+ [m
+ ### Python Code[m
+ - Follow PEP 8 style guidelines[m
+[36m@@ -98,7 +98,7 @@[m [mThank you for your interest in contributing to PPO-CodeT5! This document provide[m
+ - Add docstrings to new functions/classes[m
+ - Include examples in documentation[m
+ [m
+[31m-## 🧪 Testing[m
+[32m+[m[32m## Testing[m
+ [m
+ ### Running Tests[m
+ ```bash[m
+[36m@@ -118,7 +118,7 @@[m [mpytest tests/test_specific.py[m
+ - Mock external dependencies[m
+ - Aim for good test coverage[m
+ [m
+[31m-## 📊 Performance Considerations[m
+[32m+[m[32m## Performance Considerations[m
+ [m
+ ### Memory Usage[m
+ - Monitor GPU memory usage during training[m
+[36m@@ -130,20 +130,20 @@[m [mpytest tests/test_specific.py[m
+ - Use vectorized operations when possible[m
+ - Consider model quantization for deployment[m
+ [m
+[31m-## 🔒 Security[m
+[32m+[m[32m## Security[m
+ [m
+ - Never commit API keys or credentials[m
+ - Use environment variables for sensitive data[m
+ - Validate all user inputs[m
+ - Keep dependencies updated[m
+ [m
+[31m-## 📞 Getting Help[m
+[32m+[m[32m## Getting Help[m
+ [m
+ - Check existing issues and discussions[m
+ - Join our community discussions[m
+ - Contact maintainers for urgent issues[m
+ [m
+[31m-## 🎯 Areas for Contribution[m
+[32m+[m[32m## Areas for Contribution[m
+ [m
+ ### High Priority[m
+ - Performance optimizations[m
+[36m@@ -163,15 +163,15 @@[m [mpytest tests/test_specific.py[m
+ - Mobile deployment[m
+ - Advanced hyperparameter tuning[m
+ [m
+[31m-## 📄 License[m
+[32m+[m[32m## License[m
+ [m
+ By contributing to PPO-CodeT5, you agree that your contributions will be licensed under the MIT License.[m
+ [m
+[31m-## 🙏 Recognition[m
+[32m+[m[32m## Recognition[m
+ [m
+ Contributors will be recognized in:[m
+ - README.md contributors section[m
+ - Release notes[m
+ - Project documentation[m
+ [m
+[31m-Thank you for contributing to PPO-CodeT5! 🎉[m
+[32m+[m[32mThank you for contributing to PPO-CodeT5![m[41m [m
+[1mdiff --git a/DATASET_AND_HARDWARE_UPDATE.md b/DATASET_AND_HARDWARE_UPDATE.md[m
+[1mindex bb306a0..6298709 100644[m
+[1m--- a/DATASET_AND_HARDWARE_UPDATE.md[m
+[1m+++ b/DATASET_AND_HARDWARE_UPDATE.md[m
+[36m@@ -1,6 +1,6 @@[m
+ # Dataset and Hardware Requirements Update[m
+ [m
+[31m-## 📊 Dataset Information Added[m
+[32m+[m[32m## Dataset Information Added[m
+ [m
+ ### MBPP (Microsoft Python Programming Benchmark)[m
+ [m
+[36m@@ -21,7 +21,7 @@[m [mconfig.dataset.source_url = "https://github.com/microsoft/MBPP"[m
+ config.dataset.source_organization = "Microsoft Research"[m
+ ```[m
+ [m
+[31m-## 🖥️ Hardware Requirements Updated[m
+[32m+[m[32m## Hardware Requirements Updated[m
+ [m
+ ### System Requirements[m
+ - **Minimum**: 40GB VRAM for basic training[m
+[36m@@ -39,7 +39,7 @@[m [mconfig.training.max_episodes = 1000  # Training episodes[m
+ config.environment.max_samples = None  # Use all 374 training samples[m
+ ```[m
+ [m
+[31m-## 🔗 Attribution Links Added[m
+[32m+[m[32m## Attribution Links Added[m
+ [m
+ ### Organizations and Technologies[m
+ - **[Salesforce](https://www.salesforce.com/)** - [CodeT5+ model](https://huggingface.co/Salesforce/codet5p-770m-py)[m
+[36m@@ -49,12 +49,12 @@[m [mconfig.environment.max_samples = None  # Use all 374 training samples[m
+ - **[Hugging Face](https://huggingface.co/)** - [Transformers library](https://github.com/huggingface/transformers)[m
+ - **[EPiC Framework](https://github.com/HamedTaherkhani/EPiC)** - Epic_GA component[m
+ [m
+[31m-## 📁 Files Updated[m
+[32m+[m[32m## Files Updated[m
+ [m
+ ### Core Documentation[m
+[31m-- ✅ `README.md` - Added dataset section, hardware requirements, attribution links[m
+[31m-- ✅ `PROMIS_SUMMARY.md` - Added dataset info and hardware requirements[m
+[31m-- ✅ `ppo_codet5/config.py` - Added DatasetConfig class with MBPP information[m
+[32m+[m[32m- `README.md` - Added dataset section, hardware requirements, attribution links[m
+[32m+[m[32m- `PROMIS_SUMMARY.md` - Added dataset info and hardware requirements[m
+[32m+[m[32m- `ppo_codet5/config.py` - Added DatasetConfig class with MBPP information[m
+ [m
+ ### Key Updates Made[m
+ [m
+[36m@@ -64,7 +64,7 @@[m [mconfig.environment.max_samples = None  # Use all 374 training samples[m
+ 4. **Configuration**: Added DatasetConfig class for programmatic access to dataset info[m
+ 5. **Training Parameters**: Clarified 1000 episodes and 374 training samples[m
+ [m
+[31m-## 🎯 Training Configuration[m
+[32m+[m[32m## Training Configuration[m
+ [m
+ ### Dataset Loading[m
+ ```python[m
+[36m@@ -80,28 +80,28 @@[m [mprint(f"MBPP train size: {len(train_data)}")  # Output: 374[m
+ - **Optimal Performance**: 80GB VRAM (NVIDIA A100 80GB PCIe)[m
+ - **Large-scale**: 80x NVIDIA A100 80GB PCIe for distributed training[m
+ [m
+[31m-## 📊 Impact Assessment[m
+[32m+[m[32m## Impact Assessment[m
+ [m
+[31m-### ✅ Benefits[m
+[32m+[m[32m### Benefits[m
+ - **Clear Requirements**: Users know exactly what hardware they need[m
+ - **Proper Attribution**: All organizations and technologies properly credited[m
+ - **Dataset Clarity**: Clear information about MBPP dataset structure[m
+ - **Professional Presentation**: Academic-level documentation with proper citations[m
+ [m
+[31m-### 🔧 Technical Considerations[m
+[32m+[m[32m### Technical Considerations[m
+ - **Configuration**: Dataset information now available programmatically[m
+ - **Scalability**: Clear guidance for different training scales[m
+ - **Attribution**: Proper academic citations and links[m
+ - **Compatibility**: All existing functionality preserved[m
+ [m
+[31m-## 🚀 Ready for Research[m
+[32m+[m[32m## Ready for Research[m
+ [m
+ The project now provides:[m
+[31m-- ✅ **Complete Dataset Information**: MBPP structure and loading details[m
+[31m-- ✅ **Hardware Specifications**: Clear VRAM and system requirements[m
+[31m-- ✅ **Proper Attribution**: Links to all contributing organizations[m
+[31m-- ✅ **Academic Standards**: Professional documentation with citations[m
+[31m-- ✅ **Configuration Support**: Programmatic access to dataset information[m
+[32m+[m[32m- **Complete Dataset Information**: MBPP structure and loading details[m
+[32m+[m[32m- **Hardware Specifications**: Clear VRAM and system requirements[m
+[32m+[m[32m- **Proper Attribution**: Links to all contributing organizations[m
+[32m+[m[32m- **Academic Standards**: Professional documentation with citations[m
+[32m+[m[32m- **Configuration Support**: Programmatic access to dataset information[m
+ [m
+ ---[m
+ [m
+[1mdiff --git a/EPIC_INTEGRATION.md b/EPIC_INTEGRATION.md[m
+[1mindex 859a4bf..d1723fa 100644[m
+[1m--- a/EPIC_INTEGRATION.md[m
+[1m+++ b/EPIC_INTEGRATION.md[m
+[36m@@ -1,16 +1,16 @@[m
+ # EPiC Framework Integration in Reinforcement Learning–Driven Prompt Optimization[m
+ [m
+[31m-## 🔗 Integration Overview[m
+[32m+[m[32m## Integration Overview[m
+ [m
+ This project integrates the **Epic_GA** component, which is based on the [EPiC Framework](https://github.com/HamedTaherkhani/EPiC) by HamedTaherkhani. This integration brings powerful evolutionary prompt engineering capabilities to our reinforcement learning-driven code generation system.[m
+ [m
+[31m-## 📚 EPiC Framework Reference[m
+[32m+[m[32m## EPiC Framework Reference[m
+ [m
+ **Repository**: [HamedTaherkhani/EPiC](https://github.com/HamedTaherkhani/EPiC)  [m
+ **Paper**: "Evolutionary Prompt Engineering for Cost-Effective Code Generation with Large Language Models"  [m
+ **Key Innovation**: Lightweight evolutionary algorithm for cost-effective code generation[m
+ [m
+[31m-## 🧬 Epic_GA Component[m
+[32m+[m[32m## Epic_GA Component[m
+ [m
+ ### Core Features[m
+ - **Evolutionary Prompt Engineering**: Iteratively improves prompts through evolutionary operations[m
+[36m@@ -39,7 +39,7 @@[m [mclass EpicGA:[m
+         # 3. FastText vectors for similarity-based substitutions[m
+ ```[m
+ [m
+[31m-## 🔄 Integration in Project Workflow[m
+[32m+[m[32m## Integration in Project Workflow[m
+ [m
+ ### 1. CodeT5+ Implementation (`01_ppo_codet5.ipynb`)[m
+ ```[m
+[36m@@ -57,7 +57,7 @@[m [mThe Epic_GA component is integrated as one of the action options in the PPO envi[m
+ - **Action 1**: Rewrite prompt using LLaMA[m
+ - **Action 2**: Mutate prompt using Epic_GA[m
+ [m
+[31m-## 🎯 Key Benefits[m
+[32m+[m[32m## Key Benefits[m
+ [m
+ ### 1. Cost-Effective Optimization[m
+ - **Minimal LLM Calls**: Epic_GA uses local NLP libraries (NLTK, Gensim) for most mutations[m
+[36m@@ -74,7 +74,7 @@[m [mThe Epic_GA component is integrated as one of the action options in the PPO envi[m
+ - **Benchmark Performance**: Proven on HumanEval, MBPP, and BigCodeBench datasets[m
+ - **Cost Optimization**: Significantly reduces API costs compared to pure LLM-based approaches[m
+ [m
+[31m-## 🔬 Technical Details[m
+[32m+[m[32m## Technical Details[m
+ [m
+ ### Mutation Strategies[m
+ 1. **POS-Aware Substitution**: Uses part-of-speech tagging for context-appropriate word replacement[m
+[36m@@ -87,7 +87,7 @@[m [mThe Epic_GA component is integrated as one of the action options in the PPO envi[m
+ - **Configuration**: `ModelConfig` includes Epic_GA parameters[m
+ - **Evaluation**: Integrated with code generation and testing pipeline[m
+ [m
+[31m-## 📊 Performance Impact[m
+[32m+[m[32m## Performance Impact[m
+ [m
+ ### Cost Reduction[m
+ - **Local Mutations**: 90%+ of mutations use local NLP libraries[m
+[36m@@ -99,7 +99,7 @@[m [mThe Epic_GA component is integrated as one of the action options in the PPO envi[m
+ - **Context Awareness**: POS tagging preserves grammatical structure[m
+ - **Iterative Refinement**: Gradual improvement through evolutionary operations[m
+ [m
+[31m-## 🚀 Usage Examples[m
+[32m+[m[32m## Usage Examples[m
+ [m
+ ### Basic Epic_GA Usage[m
+ ```python[m
+[36m@@ -125,7 +125,7 @@[m [mmutated_prompts = epic_ga.mutate_sentence(original_prompt, num_versions=3)[m
+ observation, reward, done, info = env.step(action=2)  # Epic_GA mutation[m
+ ```[m
+ [m
+[31m-## 📝 Citation[m
+[32m+[m[32m## Citation[m
+ [m
+ When using this project with Epic_GA, please cite both works:[m
+ [m
+[36m@@ -145,7 +145,7 @@[m [mWhen using this project with Epic_GA, please cite both works:[m
+ }[m
+ ```[m
+ [m
+[31m-## 🤝 Acknowledgments[m
+[32m+[m[32m## Acknowledgments[m
+ [m
+ We gratefully acknowledge the work of HamedTaherkhani and the EPiC Framework for providing the foundational evolutionary prompt engineering algorithms that make PROMIS's cost-effective optimization possible.[m
+ [m
+[1mdiff --git a/LICENSE b/LICENSE[m
+[1mdeleted file mode 100644[m
+[1mindex 38d8ff0..0000000[m
+[1m--- a/LICENSE[m
+[1m+++ /dev/null[m
+[36m@@ -1,21 +0,0 @@[m
+[31m-MIT License[m
+[31m-[m
+[31m-Copyright (c) 2024 Nader Naseri[m
+[31m-[m
+[31m-Permission is hereby granted, free of charge, to any person obtaining a copy[m
+[31m-of this software and associated documentation files (the "Software"), to deal[m
+[31m-in the Software without restriction, including without limitation the rights[m
+[31m-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell[m
+[31m-copies of the Software, and to permit persons to whom the Software is[m
+[31m-furnished to do so, subject to the following conditions:[m
+[31m-[m
+[31m-The above copyright notice and this permission notice shall be included in all[m
+[31m-copies or substantial portions of the Software.[m
+[31m-[m
+[31m-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR[m
+[31m-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,[m
+[31m-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE[m
+[31m-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER[m
+[31m-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,[m
+[31m-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE[m
+[31m-SOFTWARE.[m
+[1mdiff --git a/PROJECT_NAME_UPDATE.md b/PROJECT_NAME_UPDATE.md[m
+[1mindex b732fec..81f2d1b 100644[m
+[1m--- a/PROJECT_NAME_UPDATE.md[m
+[1m+++ b/PROJECT_NAME_UPDATE.md[m
+[36m@@ -1,93 +1,93 @@[m
+[31m-# Project Name Update Summary[m
+[31m-[m
+[31m-## 📝 Updated Project Name[m
+[31m-[m
+[31m-The project has been updated to use the full academic title:[m
+[31m-[m
+[31m-**"Reinforcement Learning–Driven Prompt Optimization for LLM Code Generation: A Hybrid Lexical–Semantic Approach"**[m
+[31m-[m
+[31m-## 🔄 Files Updated[m
+[31m-[m
+[31m-### Core Documentation[m
+[31m-- ✅ `README.md` - Main project title and description[m
+[31m-- ✅ `setup.py` - Package description[m
+[31m-- ✅ `ppo_codet5/__init__.py` - Package docstring[m
+[31m-- ✅ `PROMIS_SUMMARY.md` - Project summary title[m
+[31m-- ✅ `docs/NOTEBOOKS.md` - Notebook documentation title[m
+[31m-- ✅ `EPIC_INTEGRATION.md` - EPiC integration documentation[m
+[31m-[m
+[31m-### Code Files[m
+[31m-- ✅ `ppo_codet5/main.py` - Main trainer class renamed to `ReinforcementLearningPromptOptimizer`[m
+[31m-- ✅ `ppo_codet5/cli.py` - CLI description updated[m
+[31m-- ✅ `ppo_codet5/__init__.py` - Added new trainer class to exports[m
+[31m-[m
+[31m-### Example Scripts[m
+[31m-- ✅ `examples/basic_training.py` - Updated imports and class references[m
+[31m-- ✅ `examples/custom_config.py` - Updated imports and class references[m
+[31m-- ✅ `examples/evaluation_example.py` - Updated imports and class references[m
+[31m-- ✅ `examples/compare_models.py` - Updated imports and class references[m
+[31m-[m
+[31m-### Citation Updates[m
+[31m-- ✅ `EPIC_INTEGRATION.md` - Updated BibTeX citation with new title[m
+[31m-[m
+[31m-## 🎯 Key Changes Made[m
+[31m-[m
+[31m-### 1. Title Standardization[m
+[31m-- All references to "PROMIS" replaced with the full academic title[m
+[31m-- Consistent use of en-dash (–) in "Lexical–Semantic"[m
+[31m-- Proper academic formatting throughout[m
+[31m-[m
+[31m-### 2. Class Renaming[m
+[31m-- `PPOCodeT5Trainer` → `ReinforcementLearningPromptOptimizer`[m
+[31m-- Updated all imports and references across the codebase[m
+[31m-- Maintained backward compatibility in package exports[m
+[31m-[m
+[31m-### 3. Documentation Updates[m
+[31m-- All documentation files now use the full academic title[m
+[31m-- Consistent terminology throughout the project[m
+[31m-- Updated citations and references[m
+[31m-[m
+[31m-### 4. Package Structure[m
+[31m-- Package name remains `ppo_codet5` for technical compatibility[m
+[31m-- Display name updated to full academic title[m
+[31m-- All user-facing text uses the complete title[m
+[31m-[m
+[31m-## 📊 Impact Assessment[m
+[31m-[m
+[31m-### ✅ Benefits[m
+[31m-- **Academic Credibility**: Full title reflects the research nature of the work[m
+[31m-- **Professional Presentation**: Consistent with academic paper standards[m
+[31m-- **Clear Description**: Title clearly describes the hybrid approach[m
+[31m-- **Proper Attribution**: Maintains all existing acknowledgments and references[m
+[31m-[m
+[31m-### 🔧 Technical Considerations[m
+[31m-- **Package Compatibility**: Internal package structure unchanged[m
+[31m-- **Import Compatibility**: All existing imports continue to work[m
+[31m-- **CLI Compatibility**: Command-line interface unchanged[m
+[31m-- **API Compatibility**: Python API remains consistent[m
+[31m-[m
+[31m-## 🚀 Ready for Publication[m
+[31m-[m
+[31m-The project is now ready for:[m
+[31m-- ✅ **Academic Publication**: Full academic title and proper formatting[m
+[31m-- ✅ **GitHub Repository**: Professional presentation with complete title[m
+[31m-- ✅ **Research Collaboration**: Clear academic context and terminology[m
+[31m-- ✅ **Industry Use**: Professional package with academic backing[m
+[31m-[m
+[31m-## 📝 Final Project Identity[m
+[31m-[m
+[31m-**Full Title**: "Reinforcement Learning–Driven Prompt Optimization for LLM Code Generation: A Hybrid Lexical–Semantic Approach"[m
+[31m-[m
+[31m-**Repository**: https://github.com/promptoptrl/PROMIS[m
+[31m-[m
+[31m-**Key Features**:[m
+[31m-- PPO-based reinforcement learning[m
+[31m-- EPiC Framework integration for evolutionary prompt engineering[m
+[31m-- Multi-model support (CodeT5+ and CodeLlama)[m
+[31m-- Hybrid lexical-semantic optimization approach[m
+[31m-- Professional Python package structure[m
+[31m-[m
+[31m----[m
+[31m-[m
+[31m-The project now presents a complete, academically-rigorous framework for reinforcement learning-driven prompt optimization with proper attribution to all contributing research and frameworks.[m
+[31m-[m
+[32m+[m[32m# Project Name Update Summary[m
+[32m+[m
+[32m+[m[32m## Updated Project Name[m
+[32m+[m
+[32m+[m[32mThe project has been updated to use the full academic title:[m
+[32m+[m
+[32m+[m[32m**"Reinforcement Learning–Driven Prompt Optimization for LLM Code Generation: A Hybrid Lexical–Semantic Approach"**[m
+[32m+[m
+[32m+[m[32m## Files Updated[m
+[32m+[m
+[32m+[m[32m### Core Documentation[m
+[32m+[m[32m- `README.md` - Main project title and description[m
+[32m+[m[32m- `setup.py` - Package description[m
+[32m+[m[32m- `ppo_codet5/__init__.py` - Package docstring[m
+[32m+[m[32m- `PROMIS_SUMMARY.md` - Project summary title[m
+[32m+[m[32m- `docs/NOTEBOOKS.md` - Notebook documentation title[m
+[32m+[m[32m- `EPIC_INTEGRATION.md` - EPiC integration documentation[m
+[32m+[m
+[32m+[m[32m### Code Files[m
+[32m+[m[32m- `ppo_codet5/main.py` - Main trainer class renamed to `ReinforcementLearningPromptOptimizer`[m
+[32m+[m[32m- `ppo_codet5/cli.py` - CLI description updated[m
+[32m+[m[32m- `ppo_codet5/__init__.py` - Added new trainer class to exports[m
+[32m+[m
+[32m+[m[32m### Example Scripts[m
+[32m+[m[32m- `examples/basic_training.py` - Updated imports and class references[m
+[32m+[m[32m- `examples/custom_config.py` - Updated imports and class references[m
+[32m+[m[32m- `examples/evaluation_example.py` - Updated imports and class references[m
+[32m+[m[32m- `examples/compare_models.py` - Updated imports and class references[m
+[32m+[m
+[32m+[m[32m### Citation Updates[m
+[32m+[m[32m- `EPIC_INTEGRATION.md` - Updated BibTeX citation with new title[m
+[32m+[m
+[32m+[m[32m## Key Changes Made[m
+[32m+[m
+[32m+[m[32m### 1. Title Standardization[m
+[32m+[m[32m- All references to "PROMIS" replaced with the full academic title[m
+[32m+[m[32m- Consistent use of en-dash (–) in "Lexical–Semantic"[m
+[32m+[m[32m- Proper academic formatting throughout[m
+[32m+[m
+[32m+[m[32m### 2. Class Renaming[m
+[32m+[m[32m- `PPOCodeT5Trainer` → `ReinforcementLearningPromptOptimizer`[m
+[32m+[m[32m- Updated all imports and references across the codebase[m
+[32m+[m[32m- Maintained backward compatibility in package exports[m
+[32m+[m
+[32m+[m[32m### 3. Documentation Updates[m
+[32m+[m[32m- All documentation files now use the full academic title[m
+[32m+[m[32m- Consistent terminology throughout the project[m
+[32m+[m[32m- Updated citations and references[m
+[32m+[m
+[32m+[m[32m### 4. Package Structure[m
+[32m+[m[32m- Package name rema

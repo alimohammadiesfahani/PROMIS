@@ -14,7 +14,7 @@ from ppo_codet5.utils import setup_logging
 
 def main():
     """Custom configuration example."""
-    print("🚀 Starting Reinforcement Learning–Driven Prompt Optimization Custom Configuration Example")
+    print("Starting Reinforcement Learning–Driven Prompt Optimization Custom Configuration Example")
     
     # Create custom configuration
     config = Config()
@@ -48,22 +48,22 @@ def main():
     
     # Save configuration
     config.save("./examples/custom_config.json")
-    print("💾 Configuration saved to custom_config.json")
+    print("Configuration saved to custom_config.json")
     
     # Initialize trainer
-    print("📦 Initializing trainer with custom configuration...")
+    print("Initializing trainer with custom configuration...")
     trainer = ReinforcementLearningPromptOptimizer(config)
     
     # Train
-    print("🎯 Starting training with custom configuration...")
+    print("Starting training with custom configuration...")
     results = trainer.train(config.cache.output_dir)
     
     # Print results
-    print("\n📊 Custom Training Results:")
+    print("\nCustom Training Results:")
     print(f"Final average reward: {results['episode_rewards'][-10:].mean():.3f}")
     print(f"Final success rate: {results['episode_successes'][-10:].mean():.3f}")
     
-    print("\n✅ Custom training completed successfully!")
+    print("\nCustom training completed successfully!")
 
 
 if __name__ == "__main__":

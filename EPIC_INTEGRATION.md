@@ -1,16 +1,16 @@
 # EPiC Framework Integration in Reinforcement Learning–Driven Prompt Optimization
 
-## 🔗 Integration Overview
+## Integration Overview
 
 This project integrates the **Epic_GA** component, which is based on the [EPiC Framework](https://github.com/HamedTaherkhani/EPiC) by HamedTaherkhani. This integration brings powerful evolutionary prompt engineering capabilities to our reinforcement learning-driven code generation system.
 
-## 📚 EPiC Framework Reference
+## EPiC Framework Reference
 
 **Repository**: [HamedTaherkhani/EPiC](https://github.com/HamedTaherkhani/EPiC)  
 **Paper**: "Evolutionary Prompt Engineering for Cost-Effective Code Generation with Large Language Models"  
 **Key Innovation**: Lightweight evolutionary algorithm for cost-effective code generation
 
-## 🧬 Epic_GA Component
+## Epic_GA Component
 
 ### Core Features
 - **Evolutionary Prompt Engineering**: Iteratively improves prompts through evolutionary operations
@@ -39,7 +39,7 @@ class EpicGA:
         # 3. FastText vectors for similarity-based substitutions
 ```
 
-## 🔄 Integration in Project Workflow
+## Integration in Project Workflow
 
 ### 1. CodeT5+ Implementation (`01_ppo_codet5.ipynb`)
 ```
@@ -57,7 +57,7 @@ The Epic_GA component is integrated as one of the action options in the PPO envi
 - **Action 1**: Rewrite prompt using LLaMA
 - **Action 2**: Mutate prompt using Epic_GA
 
-## 🎯 Key Benefits
+## Key Benefits
 
 ### 1. Cost-Effective Optimization
 - **Minimal LLM Calls**: Epic_GA uses local NLP libraries (NLTK, Gensim) for most mutations
@@ -74,7 +74,7 @@ The Epic_GA component is integrated as one of the action options in the PPO envi
 - **Benchmark Performance**: Proven on HumanEval, MBPP, and BigCodeBench datasets
 - **Cost Optimization**: Significantly reduces API costs compared to pure LLM-based approaches
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Mutation Strategies
 1. **POS-Aware Substitution**: Uses part-of-speech tagging for context-appropriate word replacement
@@ -87,7 +87,7 @@ The Epic_GA component is integrated as one of the action options in the PPO envi
 - **Configuration**: `ModelConfig` includes Epic_GA parameters
 - **Evaluation**: Integrated with code generation and testing pipeline
 
-## 📊 Performance Impact
+## Performance Impact
 
 ### Cost Reduction
 - **Local Mutations**: 90%+ of mutations use local NLP libraries
@@ -99,7 +99,7 @@ The Epic_GA component is integrated as one of the action options in the PPO envi
 - **Context Awareness**: POS tagging preserves grammatical structure
 - **Iterative Refinement**: Gradual improvement through evolutionary operations
 
-## 🚀 Usage Examples
+## Usage Examples
 
 ### Basic Epic_GA Usage
 ```python
@@ -125,7 +125,7 @@ mutated_prompts = epic_ga.mutate_sentence(original_prompt, num_versions=3)
 observation, reward, done, info = env.step(action=2)  # Epic_GA mutation
 ```
 
-## 📝 Citation
+## Citation
 
 When using this project with Epic_GA, please cite both works:
 
@@ -145,7 +145,7 @@ When using this project with Epic_GA, please cite both works:
 }
 ```
 
-## 🤝 Acknowledgments
+## Acknowledgments
 
 We gratefully acknowledge the work of HamedTaherkhani and the EPiC Framework for providing the foundational evolutionary prompt engineering algorithms that make PROMIS's cost-effective optimization possible.
 

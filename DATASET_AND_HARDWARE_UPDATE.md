@@ -1,6 +1,6 @@
 # Dataset and Hardware Requirements Update
 
-## 📊 Dataset Information Added
+## Dataset Information Added
 
 ### MBPP (Microsoft Python Programming Benchmark)
 
@@ -21,7 +21,7 @@ config.dataset.source_url = "https://github.com/microsoft/MBPP"
 config.dataset.source_organization = "Microsoft Research"
 ```
 
-## 🖥️ Hardware Requirements Updated
+## Hardware Requirements Updated
 
 ### System Requirements
 - **Minimum**: 40GB VRAM for basic training
@@ -39,7 +39,7 @@ config.training.max_episodes = 1000  # Training episodes
 config.environment.max_samples = None  # Use all 374 training samples
 ```
 
-## 🔗 Attribution Links Added
+## Attribution Links Added
 
 ### Organizations and Technologies
 - **[Salesforce](https://www.salesforce.com/)** - [CodeT5+ model](https://huggingface.co/Salesforce/codet5p-770m-py)
@@ -49,12 +49,12 @@ config.environment.max_samples = None  # Use all 374 training samples
 - **[Hugging Face](https://huggingface.co/)** - [Transformers library](https://github.com/huggingface/transformers)
 - **[EPiC Framework](https://github.com/HamedTaherkhani/EPiC)** - Epic_GA component
 
-## 📁 Files Updated
+## Files Updated
 
 ### Core Documentation
-- ✅ `README.md` - Added dataset section, hardware requirements, attribution links
-- ✅ `PROMIS_SUMMARY.md` - Added dataset info and hardware requirements
-- ✅ `ppo_codet5/config.py` - Added DatasetConfig class with MBPP information
+- `README.md` - Added dataset section, hardware requirements, attribution links
+- `PROMIS_SUMMARY.md` - Added dataset info and hardware requirements
+- `ppo_codet5/config.py` - Added DatasetConfig class with MBPP information
 
 ### Key Updates Made
 
@@ -64,7 +64,7 @@ config.environment.max_samples = None  # Use all 374 training samples
 4. **Configuration**: Added DatasetConfig class for programmatic access to dataset info
 5. **Training Parameters**: Clarified 1000 episodes and 374 training samples
 
-## 🎯 Training Configuration
+## Training Configuration
 
 ### Dataset Loading
 ```python
@@ -80,28 +80,28 @@ print(f"MBPP train size: {len(train_data)}")  # Output: 374
 - **Optimal Performance**: 80GB VRAM (NVIDIA A100 80GB PCIe)
 - **Large-scale**: 80x NVIDIA A100 80GB PCIe for distributed training
 
-## 📊 Impact Assessment
+## Impact Assessment
 
-### ✅ Benefits
+### Benefits
 - **Clear Requirements**: Users know exactly what hardware they need
 - **Proper Attribution**: All organizations and technologies properly credited
 - **Dataset Clarity**: Clear information about MBPP dataset structure
 - **Professional Presentation**: Academic-level documentation with proper citations
 
-### 🔧 Technical Considerations
+### Technical Considerations
 - **Configuration**: Dataset information now available programmatically
 - **Scalability**: Clear guidance for different training scales
 - **Attribution**: Proper academic citations and links
 - **Compatibility**: All existing functionality preserved
 
-## 🚀 Ready for Research
+## Ready for Research
 
 The project now provides:
-- ✅ **Complete Dataset Information**: MBPP structure and loading details
-- ✅ **Hardware Specifications**: Clear VRAM and system requirements
-- ✅ **Proper Attribution**: Links to all contributing organizations
-- ✅ **Academic Standards**: Professional documentation with citations
-- ✅ **Configuration Support**: Programmatic access to dataset information
+- **Complete Dataset Information**: MBPP structure and loading details
+- **Hardware Specifications**: Clear VRAM and system requirements
+- **Proper Attribution**: Links to all contributing organizations
+- **Academic Standards**: Professional documentation with citations
+- **Configuration Support**: Programmatic access to dataset information
 
 ---
 

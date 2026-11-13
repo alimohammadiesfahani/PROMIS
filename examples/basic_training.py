@@ -14,7 +14,7 @@ from ppo_codet5.utils import setup_logging
 
 def main():
     """Basic training example."""
-    print("🚀 Starting Reinforcement Learning–Driven Prompt Optimization Basic Training Example")
+    print("Starting Reinforcement Learning–Driven Prompt Optimization Basic Training Example")
     
     # Create configuration
     config = Config()
@@ -28,19 +28,19 @@ def main():
     setup_logging(level="INFO")
     
     # Initialize trainer
-    print("📦 Initializing trainer...")
+    print("Initializing trainer...")
     trainer = ReinforcementLearningPromptOptimizer(config)
     
     # Train
-    print("🎯 Starting training...")
+    print("Starting training...")
     results = trainer.train("./examples/outputs")
     
     # Print results
-    print("\n📊 Training Results:")
+    print("\nTraining Results:")
     print(f"Final average reward: {results['episode_rewards'][-10:].mean():.3f}")
     print(f"Final success rate: {results['episode_successes'][-10:].mean():.3f}")
     
-    print("\n✅ Training completed successfully!")
+    print("\nTraining completed successfully!")
 
 
 if __name__ == "__main__":

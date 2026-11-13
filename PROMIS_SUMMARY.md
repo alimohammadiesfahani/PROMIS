@@ -1,21 +1,21 @@
 # Reinforcement Learning–Driven Prompt Optimization for LLM Code Generation: A Hybrid Lexical–Semantic Approach
 
-## 🎯 Project Overview
+## Project Overview
 
 This project is a sophisticated machine learning framework that implements a **Hybrid Lexical–Semantic Approach** for reinforcement learning-driven prompt optimization in LLM code generation.
 
-### 📊 Dataset Information
+### Dataset Information
 - **MBPP Dataset**: 374 training samples from 974 total problems
 - **Training Command**: `train_data = load_dataset("mbpp")["train"]`
 - **Last prompt_id**: 974
 - **Source**: [Microsoft Research MBPP](https://github.com/microsoft/MBPP)
 
-### 🖥️ Hardware Requirements
+### Hardware Requirements
 - **Minimum**: 40GB VRAM for basic training
 - **Recommended**: 80GB VRAM (NVIDIA A100 80GB PCIe)
 - **Large-scale**: 80x NVIDIA A100 80GB PCIe for distributed training
 
-## 🏗️ Architecture
+## Architecture
 
 The project combines multiple cutting-edge technologies with proper attribution:
 
@@ -34,7 +34,7 @@ The project combines multiple cutting-edge technologies with proper attribution:
 - **Reflexion-Inspired Feedback**: Verbal reinforcement learning concepts for iterative prompt improvement
 - **MBPP Dataset**: Microsoft Python Programming Benchmark for training and evaluation
 
-## 🔄 Reflexion Framework Integration
+## Reflexion Framework Integration
 
 This project incorporates concepts from the **Reflexion: Language Agents with Verbal Reinforcement Learning** framework (NeurIPS 2023) to enhance prompt optimization through verbal feedback mechanisms.
 
@@ -53,10 +53,10 @@ This project incorporates concepts from the **Reflexion: Language Agents with Ve
 
 | **Concept** | **Description** | **Implementation in This Project** |
 |-------------|-----------------|-----------------------------------|
-| **Verbal Feedback** | Agents receive linguistic feedback on task performance | ✅ Test execution feedback stored in `feedback_history` |
-| **Episodic Memory** | Store reflections for future decision-making | ✅ Feedback persistence across episodes via `self.feedback` |
-| **Reflection Mechanism** | Agents verbally reflect on task feedback | ✅ LLaMA-based prompt rewriting using previous feedback |
-| **Iterative Improvement** | Use past reflections to improve future performance | ✅ PPO agent learns from feedback patterns over time |
+|**Verbal Feedback** | Agents receive linguistic feedback on task performance | Test execution feedback stored in `feedback_history` |
+|**Episodic Memory** | Store reflections for future decision-making | Feedback persistence across episodes via `self.feedback` |
+|**Reflection Mechanism** | Agents verbally reflect on task feedback | LLaMA-based prompt rewriting using previous feedback |
+|**Iterative Improvement** | Use past reflections to improve future performance | PPO agent learns from feedback patterns over time |
 
 ### Reflexion Performance Results
 
@@ -88,7 +88,7 @@ This integration allows our reinforcement learning-driven prompt optimization sy
 - **Reflexion-inspired feedback** for linguistic reflection and improvement
 - **EPiC evolutionary methods** for semantic-preserving mutations
 
-## 📊 Experimental Results
+## Experimental Results
 
 ### Performance Comparison on MBPP Benchmark
 
@@ -102,22 +102,22 @@ The following table shows a comprehensive comparison of Pass@1 (strict success r
 | **Randomized Selection (10 Steps)** | 31.12% | 44.10% | 49.08% | 58.60% |
 | **EPiC** | 41.89% | 54.20% | 51.40% | 61.50% |
 | **Reflexion** | 41.63% | 55.10% | 52.70% | 63.60% |
-| **🎯 RL Agent (PPO, Ours)** | **57.58%** | **67.90%** | **64.80%** | **73.10%** |
+|** RL Agent (PPO, Ours)** | **57.58%** | **67.90%** | **64.80%** | **73.10%** |
 
 ### Key Findings
 
-#### 🏆 Superior Performance
+#### Superior Performance
 - **Our RL Agent (PPO)** achieves the highest performance across all metrics
 - **CodeT5+**: 57.58% Pass@1 (vs 41.89% EPiC, 41.63% Reflexion)
 - **CodeLLaMA**: 64.80% Pass@1 (vs 52.70% Reflexion, 51.40% EPiC)
 
-#### 📈 Significant Improvements
+#### Significant Improvements
 - **CodeT5+ Pass@1**: +15.69% improvement over EPiC, +15.95% over Reflexion
 - **CodeT5+ SoftPass@1**: +13.70% improvement over EPiC, +12.80% over Reflexion
 - **CodeLLaMA Pass@1**: +12.10% improvement over Reflexion, +13.40% over EPiC
 - **CodeLLaMA SoftPass@1**: +9.50% improvement over Reflexion, +11.60% over EPiC
 
-#### 🔍 Strategy Analysis
+#### Strategy Analysis
 1. **Direct Generation**: Baseline performance showing room for improvement
 2. **Genetic Mutation**: Modest improvements through evolutionary operations
 3. **Semantic Rewriting**: Better results through LLM-based prompt modification
@@ -126,7 +126,7 @@ The following table shows a comprehensive comparison of Pass@1 (strict success r
 6. **Reflexion**: Competitive verbal reinforcement learning approach
 7. **Our RL Agent**: Best performance through learned prompt optimization strategies
 
-#### 💡 SoftPass@1 Insights
+#### SoftPass@1 Insights
 - **Incremental Progress**: SoftPass@1 reveals improvements missed by binary Pass@1
 - **Lexical Benefits**: Shows value of semantic transformations
 - **Multi-step Learning**: Demonstrates benefits of reinforcement learning with shaped rewards
@@ -144,7 +144,7 @@ The following table shows a comprehensive comparison of Pass@1 (strict success r
    - Focus: General-purpose code generation
    - Best for: Complex tasks and production use
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Reinforcement-Learning-Driven-Prompt-Optimization/
@@ -173,29 +173,29 @@ Reinforcement-Learning-Driven-Prompt-Optimization/
 └── install scripts               # Cross-platform installation
 ```
 
-## 🚀 Key Features
+## Key Features
 
 ### Professional Package Structure
-- ✅ **Modular Architecture**: Clean separation of concerns
-- ✅ **Configuration Management**: Flexible, dataclass-based configuration
-- ✅ **CLI Interface**: Professional command-line tools
-- ✅ **Python API**: Clean programmatic interface
-- ✅ **Comprehensive Documentation**: Extensive docs and examples
+- **Modular Architecture**: Clean separation of concerns
+- **Configuration Management**: Flexible, dataclass-based configuration
+- **CLI Interface**: Professional command-line tools
+- **Python API**: Clean programmatic interface
+- **Comprehensive Documentation**: Extensive docs and examples
 
 ### Multiple Usage Options
-- ✅ **Jupyter Notebooks**: Interactive development and experimentation
-- ✅ **Command Line**: `ppo-codet5 config/train/eval` commands
-- ✅ **Python API**: `from ppo_codet5 import Config, PPOCodeT5Trainer`
-- ✅ **Comparison Tools**: Side-by-side model evaluation
+- **Jupyter Notebooks**: Interactive development and experimentation
+- **Command Line**: `ppo-codet5 config/train/eval` commands
+- **Python API**: `from ppo_codet5 import Config, PPOCodeT5Trainer`
+- **Comparison Tools**: Side-by-side model evaluation
 
 ### Advanced Capabilities
-- ✅ **Hybrid Approach**: Combines lexical and semantic optimization
-- ✅ **Multi-Model Support**: CodeT5+ and CodeLlama implementations
-- ✅ **Genetic Algorithm**: Text mutation with semantic preservation
-- ✅ **Comprehensive Evaluation**: Detailed metrics and analysis
-- ✅ **Production Ready**: Scalable and maintainable codebase
+- **Hybrid Approach**: Combines lexical and semantic optimization
+- **Multi-Model Support**: CodeT5+ and CodeLlama implementations
+- **Genetic Algorithm**: Text mutation with semantic preservation
+- **Comprehensive Evaluation**: Detailed metrics and analysis
+- **Production Ready**: Scalable and maintainable codebase
 
-## 🎯 Research Contributions
+## Research Contributions
 
 ### Novel Approach
 - **Hybrid Lexical–Semantic Optimization**: Combines traditional NLP techniques with modern LLM capabilities
@@ -210,33 +210,33 @@ Reinforcement-Learning-Driven-Prompt-Optimization/
 - **Multi-Agent Architecture**: PPO agent with specialized environments
 - **Comprehensive Metrics**: Success rates, execution time, error analysis
 
-## 🤝 Collaboration Ready
+## Collaboration Ready
 
 ### Team Development Features
-- ✅ **Professional Structure**: Industry-standard Python package
-- ✅ **Clear Documentation**: Comprehensive guides and examples
-- ✅ **Modular Design**: Easy for multiple developers to work on
-- ✅ **Version Control**: Git-ready with proper .gitignore
-- ✅ **Testing Framework**: Built-in testing capabilities
-- ✅ **CI/CD Ready**: Automated testing and deployment support
+- **Professional Structure**: Industry-standard Python package
+- **Clear Documentation**: Comprehensive guides and examples
+- **Modular Design**: Easy for multiple developers to work on
+- **Version Control**: Git-ready with proper .gitignore
+- **Testing Framework**: Built-in testing capabilities
+- **CI/CD Ready**: Automated testing and deployment support
 
 ### GitHub Integration
-- ✅ **Repository**: https://github.com/promptoptrl/PROMIS
-- ✅ **MIT License**: Open source and collaborative
-- ✅ **Contributing Guidelines**: Clear contribution process
-- ✅ **Issue Tracking**: GitHub issues for bug reports and features
-- ✅ **Pull Request Workflow**: Standard GitHub collaboration
+- **Repository**: https://github.com/promptoptrl/PROMIS
+- **MIT License**: Open source and collaborative
+- **Contributing Guidelines**: Clear contribution process
+- **Issue Tracking**: GitHub issues for bug reports and features
+- **Pull Request Workflow**: Standard GitHub collaboration
 
-## 🎉 Ready for Production
+## Ready for Production
 
 The PROMIS project is now ready for:
-- ✅ **Academic Research**: Publication-ready implementation
-- ✅ **Industry Application**: Production-grade codebase
-- ✅ **Team Collaboration**: Multi-developer workflow support
-- ✅ **Open Source**: Community contribution and adoption
-- ✅ **Further Development**: Extensible and maintainable architecture
+- **Academic Research**: Publication-ready implementation
+- **Industry Application**: Production-grade codebase
+- **Team Collaboration**: Multi-developer workflow support
+- **Open Source**: Community contribution and adoption
+- **Further Development**: Extensible and maintainable architecture
 
-## 📞 Next Steps
+## Next Steps
 
 1. **Upload to GitHub**: Push to https://github.com/promptoptrl/PROMIS
 2. **Team Onboarding**: Share repository with collaborators
